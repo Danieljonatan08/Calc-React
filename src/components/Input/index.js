@@ -4,7 +4,7 @@ import { InputContainer } from './styles';
 const Input = () => {
   return (
     <InputContainer>
-      FAZ O L
+        <input  />
     </InputContainer>
   );
 }

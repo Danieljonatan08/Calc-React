@@ -1,24 +1,30 @@
 import styled from "styled-components";
 
 export const InputContainer = styled.div`
-  width: 94%;
-  height: 75px;
+  width: 100%;
+  height: 79px;
   background-color: #6363ff;
   color: #fff;
+
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0 10px;
+  
+  
   font-size: 24px;
   font-family: "Roboto Mono", monospace;
 
   input {
     width: 100%;
-    height: 75px;
-    background-color: #5f5fff;
-    border: 0;
-    display: flex;
+    height: 100%;
+    background-color: #6363ff;
+    border: none;
+    display:flex;
     flex-direction: column;
+    padding: 0 10px;
+    outline: none;
+    color: #fff;
+    
 
     font-size: 24px;
     align-items: right;
