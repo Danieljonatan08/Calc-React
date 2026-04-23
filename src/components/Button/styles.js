@@ -13,6 +13,13 @@ export const ButtonContainer = styled.button`
     margin: 1px;  
     
 
+    &:hover {
+        opacity: 0.6;
+          
+        
+        }
+  
+
   
    
 
