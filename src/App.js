@@ -30,35 +30,84 @@ const App = () => {
     setOperation("");
   }
 };
-  const handleEquals = () => {
-  if (firstNumber !== "0" && operation !== "" && currentNumber !== "0") {
-    switch (operation) {
-      case "+":
-        handleSumNumbers();
-        break;
-      default:
-        break;
-    }
+
+const handleMinusNumbers = () => {
+  if (firstNumber === "0") {
+    setFirstNumber(String(currentNumber));
+    setCurrentNumber("0"); // aqui sim você pode limpar o currentNumber
+    setOperation("-");
+    
+  } else {
+    const sum = Number(firstNumber) - Number(currentNumber);
+    setCurrentNumber(String(sum));
+    setFirstNumber("0"); // opcional, se quiser resetar
+    setOperation("");
+  }
+};
+const handleMultiplyNumbers = () => {
+  if (firstNumber === "0") {
+    setFirstNumber(String(currentNumber));
+    setCurrentNumber("0"); // aqui sim você pode limpar o currentNumber
+    setOperation("*");
+    
+  } else {
+    const sum = Number(firstNumber) * Number(currentNumber);
+    setCurrentNumber(String(sum));
+    setFirstNumber("0"); // opcional, se quiser resetar
+    setOperation("");
+  }
+};
+const handleDivisionNumbers = () => {
+  if (firstNumber === "0") {
+    setFirstNumber(String(currentNumber));
+    setCurrentNumber("0"); // aqui sim você pode limpar o currentNumber
+    setOperation("/");
+    
+  } else {
+    const sum = Number(firstNumber) / Number(currentNumber);
+    setCurrentNumber(String(sum));
+    setFirstNumber("0"); // opcional, se quiser resetar
+    setOperation("");
   }
 };
 
+const handleEquals = () => {
+if (firstNumber !== "0" && operation !== "" && currentNumber !== "0") {
+  switch (operation) {
+    case "+":
+      handleSumNumbers();
+      break;
+      case "-":
+      handleMinusNumbers();
+      break;
+      case "*":
+      handleMultiplyNumbers();
+      break;
+      case "/":
+      handleDivisionNumbers();
+      break;
+    default:
+      break;
+  }
+}
+};
 
-  return (
-    <Container>
+return (
+  <Container>
       <Content>
         <Input value={currentNumber} />
         <Row>
           <Button label="on" onClick={() => handleAddNumber("")} />
           <Button label="c" onClick={handleOnClear} />
 
-         <Button label="/" onClick={() => handleAddNumber("/")} />
-          <Button label="*" onClick={() => handleAddNumber("*")} />
+         <Button label="/" onClick={handleDivisionNumbers} />
+          <Button label="*" onClick={handleMultiplyNumbers} />
         </Row>
         <Row>
           <Button label="7" onClick={() => handleAddNumber("7")} />
           <Button label="8" onClick={() => handleAddNumber("8")} />
           <Button label="9" onClick={() => handleAddNumber("9")} />
-          <Button label="-" onClick={() => handleAddNumber("-")} />
+          <Button label="-" onClick={handleMinusNumbers} />
         </Row>
         <Row>
           <Button label="4" onClick={() => handleAddNumber("4")} />
