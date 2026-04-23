@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# 📟 Calculadora em React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma calculadora simples desenvolvida em **React**, criada como parte de um desafio de prática.  
+O objetivo é aplicar conceitos fundamentais de componentes, estados e estilização em aplicações React.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Funcionalidades
 
-### `npm start`
+- Operações básicas:
+  - ➕ Soma
+  - ➖ Subtração
+  - ✖️ Multiplicação
+  - ➗ Divisão
+- Botão **C** para limpar os valores.
+- Exibição dinâmica dos números digitados.
+- Interface modularizada com componentes reutilizáveis (`Button` e `Input`).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tecnologias utilizadas
 
-### `npm test`
+- **React** (biblioteca principal para construção da interface)
+- **JavaScript (ES6+)**
+- **Styled-components** (para estilização dos componentes)
+- **Node.js** (ambiente de execução)
+- **npm / yarn** (gerenciamento de pacotes)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📂 Estrutura do projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+desafio-01-calc-react/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Button/
+│   │   │   ├── index.js
+│   │   │   └── styles.js
+│   │   ├── Input/
+│   │   │   ├── index.js
+│   │   │   └── styles.js
+│   ├── App.js
+│   ├── global.js
+│   ├── index.js
+│   └── styles.js
+├── package.json
+├── yarn.lock
+└── README.md
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Código
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ▶️ Como executar
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/Danieljonatan08/Calc-React.git
+Instale as dependências:
 
-## Learn More
+bash
+npm install
+# ou
+yarn install
+Execute o projeto:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash
+npm start
+# ou
+yarn start
+Acesse no navegador:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Código
+http://localhost:3000
 
-### Code Splitting
+📌 Objetivo
+Este projeto foi desenvolvido para praticar:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Manipulação de estado com useState.
 
-### Analyzing the Bundle Size
+Criação de componentes reutilizáveis.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Organização de pastas e modularização de código.
 
-### Making a Progressive Web App
+Uso de styled-components para estilização.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📄 Licença
+Este projeto está sob a licença MIT.
+Sinta-se livre para usar, modificar e compartilhar.
 
-### Advanced Configuration
+Código
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Esse README já está pronto para ser usado diretamente no seu repositório [Danieljonatan08/Calc-React](https://github.com/Danieljonatan08/Calc-React).
